@@ -1,0 +1,545 @@
+/*start global rules */  
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+:root {
+    --main-color: rgb(0, 128, 90);
+    --alt-color: #ffffff;
+    --main-transition: 0.3s;
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Jost",Sans-serif;;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+.container {
+    padding-left: 25px;
+    padding-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*small*/
+@media (min-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* medium */
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+/*larg */
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+.head {
+    margin-top: 100px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.head .one {
+    color: var(--main-color);
+    font-family: "Poppins",Sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+.head .two {
+    font-size: 35px;
+    line-height: 1.2em;
+}
+/*end global rules */  
+/*start header */  
+header {
+    background-image: url('../images/bck-01.jpg');
+    background-size: cover;
+    padding-bottom: 100px;
+}
+header .container {
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+header .logo img {
+    height: 60px;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+header .links {
+    margin-bottom: 30px;
+}
+header .links a {
+    color: var(--alt-color);
+    font-weight: bold;
+    padding-right: 30px;
+    transition: var(--main-transition);
+}
+header .links a:hover {
+    color: var(--main-color);
+}
+header .links a:hover {
+    color: var(--main-color);
+}
+header .social {
+    margin-bottom: 30px;
+}
+header .social i{
+    font-weight: bold;
+    font-size: 20px;
+    padding: 5px;
+    background-color: rgb(0, 128, 90);
+    color: #ffffff;
+    border-radius: 6px;
+}
+@media (max-width: 992px) {
+    header .container {
+        flex-direction: column;
+    }
+}
+@media (max-width: 570px) {
+    header .social {
+        display: none;
+    }
+    header .links {
+        display: none;
+    }
+}
+header .container-2 {
+    margin-top: 125px;
+    margin-left: 100px;
+}
+@media (max-width: 800px) {
+    header .container-2 {
+        margin-top: 50px;
+    }
+}
+@media (max-width: 650px) {
+    header .container-2 {
+        text-align: center;
+        margin-left: 0px;
+        margin-top: 0;
+    }
+}
+header .container-2 h2 {
+    font-size: 72px;
+    line-height: 85px;
+    font-family: "Jost",Sans-serif;
+    color: var(--alt-color);
+}
+header .container-2 p {
+    color: var(--alt-color);
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 40px;
+}
+header .container-2 a {
+    font-family: "Jost",Sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: var(--main-color);
+    color: var(--alt-color);
+    border-radius: 10px;
+    padding: 20px 30px;
+}
+/*end header */  
+/*start services */ 
+.services {
+    background-color: var(--alt-color);
+} 
+.services .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    text-align: center;
+} 
+.services .box {
+    background-color: whitesmoke;
+    padding: 50px 40px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgb(0 0 0 / 30%);
+} 
+@media (max-width: 380px) {
+    .services .box {
+        padding: 50px 20px;
+        margin-right: 30px;
+    }
+}
+.services .box i:not(:last-child) {
+    color: var(--main-color);
+}
+.services .box h3 {
+    font-size: xx-large;
+} 
+.services .box p {
+    font-size: large;
+    line-height: 1.6;
+} 
+.services .box .more {
+    align-items: center;
+    text-align: center;
+    color: black;
+} 
+.services .box .more span {
+    font-weight: 700;
+    padding-right: 20px;
+} 
+/*end services */  
+/*start about */  
+.about {
+    margin-top: 70px;
+    background-color: whitesmoke;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+.about .container {
+    display: flex;
+}
+.about img {
+    height: 800px;
+    flex: 1;
+    background-color: white;
+    border-radius: 50% 0 0 50%;
+    padding: 20px 50px;
+    margin-right: 20px;
+}
+.about p {
+    line-height: 1.5;
+}
+.about .one li {
+    display: flex;
+    align-items: center;
+}
+.about .one li i {
+    color: var(--main-color);
+    margin-right: 5px;
+}
+.about .two {
+    display: flex;
+}
+.about .two li {
+    text-align: center;
+    margin-right: 40px;
+}
+.about .two li h2 {
+    color: var(--main-color);
+    font-size: 30px;
+    font-weight: 900;
+}
+.about .two li p {
+    font-size: larger;
+}
+@media (max-width: 992px) {
+    .about img {
+        display: none;
+    }
+    .about {
+        padding-top: 0;
+    }
+}
+@media (max-width: 768px) {
+    .about .content {
+        text-align: center;
+    }
+    .about .two {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/*end about */  
+/*start portfolio */
+.portfolio {
+    background-image: url('../images/bck-2.jpg');
+    background-size: cover;
+    padding-bottom: 60px;
+    margin-bottom: 0;
+}
+.portfolio .head {
+    text-align: left;
+}
+.portfolio .head .two {
+    color: var(--alt-color);
+}
+.portfolio .content-1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.portfolio .see {
+    background-color: none;
+    color: var(--alt-color);
+    padding: 20px 30px;
+    border-radius: 8px;
+    border: 1px solid var(--alt-color) ;
+    font-weight: 800;
+    transition: var(--main-transition);
+}
+.portfolio .see:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+.portfolio .see a {
+    padding-right: 5px;
+    color: var(--alt-color);
+}
+.portfolio .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    text-align: center;
+}
+@media (max-width: 650px) {
+    .portfolio .content {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .portfolio .content-1 {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 40px;
+    }
+}
+.portfolio .content .box {
+    background-color: var(--alt-color);
+    border-radius: 12px;
+}
+@media (max-width: 530px) {
+    .portfolio .content .box {
+        width: 100%;
+        text-align: center;
+    }
+}
+.portfolio .box img {
+    height: 300px;
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    max-width: 100%;
+}
+.portfolio .box p {
+    text-align: left;
+    color: var(--main-color);
+    margin-left: 40px;
+}
+.portfolio .box h3 {
+    text-align: left;
+    margin-left: 40px;
+    color: black;
+}
+/* end portfolio */
+/* start process */
+.process {
+    background-image: url('../images/bck-3.jpg');
+    background-size: cover;
+    padding: 40px 0px;
+}
+.process .head {
+    text-align: left;
+}
+.process ul li {
+    display: flex;
+    align-items: center;
+}
+.process ul li i {
+    padding-right: 6px;
+}
+/* end process */
+/* start pricing */
+.pricing {
+    background-image: url('../images/bck-2.jpg');
+    background-size: cover;
+    padding-top: 10px;
+    padding-bottom: 60px;
+}
+.pricing .container {
+
+}
+.pricing .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+}
+.pricing .box {
+    background-color: var(--alt-color);
+    padding: 20px;
+    border-radius: 15px;
+    padding-bottom: 30px;
+}
+.pricing .head1 {
+    color: var(--main-color);
+}
+.pricing .head1 h2 {
+    font-size: 45px;
+    font-weight: 600;
+    line-height: 55px;
+}
+.pricing .head1 p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 27px;
+}
+.pricing .head1::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(212, 209, 209);
+}
+.pricing ul {
+    margin-bottom: 35px;
+}
+.pricing ul li {
+    display: flex;
+    align-items: center;
+    transition: var(--main-transition);
+}
+.pricing ul li:hover {
+    color: var(--main-color);
+}
+.pricing ul li i {
+    margin-right: 10px;
+}
+.pricing a {
+    margin-left: 30px;
+    color: black;
+    width: fit-content;
+    padding: 20px 30px;
+    border: 2px solid black;
+    border-radius: 6px;
+    font-weight: 700;
+}
+.pricing a:hover {
+    background-color: var(--main-color);
+    border-color: var(--main-color);
+}
+@media (max-width: 333px) {
+    .pricing .box {
+        margin-right: 40px;
+    }
+}
+/* end pricing */
+/* start footer */
+.footer {
+    padding-bottom: 50px;
+    background-color: var(--main-color);
+}
+.footer::after {
+    content: '';
+    width: 70%;
+    height: 1px;
+    text-align: center;
+    background-color: gray;
+    display: block;
+    text-align: center;
+    margin-left: 120px;
+    margin-top: 50px;
+}
+@media (max-width: 590px) {
+    .footer::after {
+        height: 0;
+    }
+}
+.footer .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+.footer .head::after {
+    margin-top: 20px;
+    content: '';
+    width: 100%;
+    height: 1px;
+    text-align: center;
+    background-color: gray;
+    display: block;
+}
+.footer .one {
+    text-align: center;
+}
+.footer img {
+    height: 70px;
+}
+.footer .one h2 {
+    font-family: "Poppins",Sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    color: black;
+}
+.footer .one ul i {
+    color: black;
+}
+.footer .two ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.footer .two ul a {
+    color: black;
+}
+.footer .three ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+}
+.footer .three ul a {
+    color: black;
+}
+.footer .four ul {
+    text-align: center;
+}
+.footer .four ul p {
+    color: black;
+}
+/* end footer */
+/* start biba */
+.biba {
+    background-color: var(--main-color);
+    text-align: center;
+    margin-top: 0;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+.biba .copyright a {
+    color: var(--alt-color);
+    cursor: pointer;
+}
+/* end biba */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
